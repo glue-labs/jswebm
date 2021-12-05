@@ -20,6 +20,8 @@ const EXIT_OK = 666;
  */
 class JsWebm {
   constructor() {
+    console.log('#### JsWebm constructor');
+
     this.shown = false; // for testin
     this.clusters = [];
     this.segmentInfo = [];
@@ -311,8 +313,8 @@ class JsWebm {
       this.tempElementHeader.reset();
     }
 
-    this.eof = true;
-    this.state = STATE_FINISHED;
+    // this.eof = true;
+    // this.state = STATE_FINISHED;
     return status;
   }
 
